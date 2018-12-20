@@ -1,0 +1,15 @@
+- Введение
+  - Структура доклада
+  - Ожидания от доклада
+- Как я начал работать с RxJs
+- Коротко об Rxjs (из презентации)
+- Использование в Angular (кратко)
+- Использование RxJs для ajax
+  - @angular/HttpClient
+  - axios via rxjs
+- Использование в Redux
+  - @ngrx/effects
+  - redux-observable epics
+- Example1
+- Example2
+- ExampleN

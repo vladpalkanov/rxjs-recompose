@@ -1,13 +1,19 @@
 import * as React from 'react';
-import { render } from 'react-dom';
-import AnotherComponent from './another';
+import * as ReactDOM from 'react-dom';
+import { setObservableConfig } from 'recompose';
+import { from } from 'rxjs';
 
-console.log(123);
+import './index.css';
+import registerServiceWorker from './registerServiceWorker';
 
-render(
-    <h1>
-        <AnotherComponent />
-        H1
-    </h1>,
-    document.getElementById('root'),
+import App from './App';
+
+setObservableConfig({
+  fromESObservable: from
+});
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root') as HTMLElement
 );
+registerServiceWorker();
